@@ -9,4 +9,4 @@ model = BrandLogoDetectionModel()
 path=r"C:\Users\deban\Programming\Programs\FlipkartGrid\non-updated_file_structs\product_test.mp4"
 model.process_from_video(0)
 df=model.get_detections_csv()
-print(df)
+df.to_csv('Result.csv')
